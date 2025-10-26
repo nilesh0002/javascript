@@ -1,5 +1,7 @@
 //  Primitive
 
+const { useInsertionEffect } = require("react");
+
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100
@@ -35,3 +37,22 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//stack (primitive),heap(non-premitive)
+
+let myYouttubename="hiteshchaudharydotcom"
+
+let anothername=myYouttubename
+anothername="chaiaurcode"
+
+console.log(myYouttubename)
+console.log(anothername)
+
+let userone={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let usertwo=userone
+usertwo.emai="hitesh@gppgle.com"
+console.log(userone.email);
+console.log(usertwo,email);
